@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and drop</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <p>Drag the W3Schools image into the rectangle:</p>
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <br>
+    <img id="drag1" src="https://www.w3schools.com/html/img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
+    <hr><br>
+
+
+    <!-- exemplo2 -->
+    <div id="colunas">
+        <div id="pri" class="valor" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="seg" class="op" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="ter" class="valor" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="qua" class="op"><h1>=</h1></div>
+        <div id="qui" class="valor" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+
+    <br><br><br><br><br><br>
+
+   
+
+    <div id="teclado">
+        <div id="numeros">
+            <div class="numero"  draggable="true" id="0" ondragstart="drag(event)"><h1>0</h1></div>
+            <div class="numero" draggable="true" id="1" ondragstart="drag(event)"><h1>1</h1></div>
+            <div class="numero" draggable="true" id="2" ondragstart="drag(event)"><h1>2</h1></div>
+            <div class="numero" draggable="true" id="3" ondragstart="drag(event)"><h1>3</h1></div>
+            <div class="numero" draggable="true" id="4" ondragstart="drag(event)"><h1>4</h1></div>
+            <div class="numero" draggable="true" id="5" ondragstart="drag(event)"><h1>5</h1></div>
+            <div class="numero" draggable="true" id="6" ondragstart="drag(event)"><h1>6</h1></div>
+            <div class="numero" draggable="true" id="7" ondragstart="drag(event)"><h1>7</h1></div>
+            <div class="numero" draggable="true" id="8" ondragstart="drag(event)"><h1>8</h1></div>
+            <div class="numero" draggable="true" id="9" ondragstart="drag(event)"><h1>9</h1></div>
+    
+        </div> 
+        <br><br><br><br><br><br><br>
+        <div id="operacao">
+            <div class="op" draggable="true" id="+" ondragstart="drag(event)"><h1>+</h1></div>
+            <div class="op" draggable="true" id="-" ondragstart="drag(event)"><h1>-</h1></div>
+            <div class="op" draggable="true" id="*" ondragstart="drag(event)"><h1>*</h1></div>
+            <div class="op" draggable="true" id="/" ondragstart="drag(event)"><h1>/</h1></div>
+            <div class="op" draggable="true" id="%" ondragstart="drag(event)"><h1>%</h1></div>
+        </div> 
+    </div>
+
+</body>
+<script src="codigo.js"></script>
+</html>
